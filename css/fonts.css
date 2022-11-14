@@ -1,0 +1,125 @@
+/* 100 - Thin */
+@font-face {
+    font-family: Poppins;
+    src: url(../res/Poppins-Thin.ttf) format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../res/Poppins-ThinItalic.ttf) format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* 200 - ExtraLight */
+@font-face {
+    font-family: Poppins;
+    src: url(../res/Poppins-ExtraLight.ttf) format('truetype');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../res/Poppins-ExtraLightItalic.ttf) format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* 300 - Light */
+@font-face {
+    font-family: Poppins;
+    src: url(../res/Poppins-Light.ttf) format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../res/Poppins-LightItalic.ttf) format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* 400 - Regular */
+@font-face {
+    font-family: Poppins;
+    src: url(../res/Poppins-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../res/Poppins-Italic.ttf) format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* 500 - Medium */
+@font-face {
+    font-family: Poppins;
+    src: url(../res/Poppins-Medium.ttf) format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../res/Poppins-MediumItalic.ttf) format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* 600 - SemiBold */
+@font-face {
+    font-family: Poppins;
+    src: url(../res/Poppins-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../res/Poppins-SemiBoldItalic.ttf) format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* 700 - Bold */
+@font-face {
+    font-family: Poppins;
+    src: url(../res/Poppins-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../res/Poppins-BoldItalic.ttf) format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* 800 - ExtraBold */
+@font-face {
+    font-family: Poppins;
+    src: url(../res/Poppins-ExtraBold.ttf) format('truetype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../res/Poppins-ExtraBoldItalic.ttf) format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* 900 - Black */
+@font-face {
+    font-family: Poppins;
+    src: url(../res/Poppins-Black.ttf) format('truetype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../res/Poppins-BlackItalic.ttf) format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
