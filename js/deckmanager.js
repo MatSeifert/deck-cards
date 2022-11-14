@@ -1,4 +1,4 @@
-const deckContent = {
+const deck = {
     "deckName": "Glurak",
     "deckPatron": "charizard",
     "deckType":"vintage",
@@ -162,14 +162,30 @@ const deckContent = {
     }
 }
 
+const getTrainerCardTypeName = (type) => {
+    switch(type) {
+        // Vintage Trainer Karte
+        case 'trainer':
+            return 'Trainer'
+        case 'special-energy': 
+            return 'Spezial-Energie'
+        case 'item':
+            return 'Item'
+        case 'supporter':
+            return 'Unterstützer'
+        case 'stadium':
+            return 'Stadion'
+    }
+}
+
 const title = document.getElementById('title')
-title.appendChild(document.createTextNode(deckContent['deckName']))
+title.appendChild(document.createTextNode(deck['deckName']))
 
 const body = document.getElementById('main')
-body.classList.add(deckContent.deckPrimaryEnergyType)
+body.classList.add(deck.deckPrimaryEnergyType)
 
 const pokemonContent = document.getElementById('pokemon-content')
-for (const p of deckContent.deckContent.pokemon) {
+for (const p of deck.deckContent.pokemon) {
     const pNode = document.createElement('div')
     pNode.classList.add('pokemon-wrapper')
 
@@ -190,6 +206,30 @@ for (const p of deckContent.deckContent.pokemon) {
     pNode.appendChild(pNodeName)
 
     pokemonContent.appendChild(pNode)
+}
+
+const trainerContent = document.getElementById('trainer-content')
+for (const t of deck.deckContent.trainer) {
+    console.log(t.cardName)
+    const tNode = document.createElement('div')
+    tNode.classList.add('trainer-wrapper')
+
+    const tNodeType = document.createElement('div')
+    tNodeType.appendChild(document.createTextNode(getTrainerCardTypeName(t.trainerType)))
+    tNodeType.classList.add('trainer-type')
+    tNodeType.classList.add(t.trainerType)
+    tNode.appendChild(tNodeType)
+
+    const tNodeAmount = document.createElement('div')
+    tNodeAmount.classList.add('amount')
+    tNodeAmount.appendChild(document.createTextNode(t.amount))
+    tNode.appendChild(tNodeAmount)
+
+    const tNodeName = document.createElement('div')
+    tNodeName.appendChild(document.createTextNode(t.cardName))
+    tNode.appendChild(tNodeName)
+
+    trainerContent.appendChild(tNode)
 }
 
 console.log(window.location.href)

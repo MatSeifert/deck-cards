@@ -55,7 +55,8 @@ h2 {
     margin-top: 1.5rem;
 }
 
-div.pokemon-wrapper {
+div.pokemon-wrapper,
+div.trainer-wrapper {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -89,4 +90,10 @@ div.pokemon-wrapper .energy:after {
 div.pokemon-wrapper .amount {
     width: 1rem;
     text-align: center;
+}
+
+div.trainer-type {
+    text-transform: uppercase;
+    -webkit-text-stroke: 0px;
+    font-size: .75rem;
 }
